@@ -19,7 +19,7 @@ class health:
 class hello:
   def GET(self):
     return json.dumps({
-      'msg': 'hello from ' + HOST, 
+      'msg': 'hello hello from ' + HOST, 
       'date': str(datetime.datetime.now())
     })
 
