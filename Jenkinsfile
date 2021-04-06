@@ -29,7 +29,7 @@ node {
   }
   finally {
     if (currentBuild.result != 'SUCCESS'){
-      slackSend(color: '#FF0000', message: "${JOB_NAME} <${BUILD_URL}/display/redirect|Build #${BUILD_NUMBER}> " + currentBuild.result + " (last committer: <@" + getCommitter() + ">)")
+      slackSend(color: '#FF0000', message: "${JOB_NAME} <${BUILD_URL}/display/redirect|Build #${BUILD_NUMBER}> " + currentBuild.result)
     }
   }
 }
