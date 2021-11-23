@@ -15,6 +15,7 @@ pipeline {
     stage('Build') {
       steps {
         // withDockerRegistry([url: '', credentialsId: 'reg-creds']) {
+          sh 'pwd && ls -la'
           sh 'f8 build --push'
         // }
       }
