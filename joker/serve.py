@@ -13,7 +13,7 @@ class health:
 class hello:
   def GET(self):
     return json.dumps({
-      'msg': 'Hello from ' + HOST + ', request /joke and I will reply with a joke',
+      'msg': 'Hello from ' + HOST + ', append "/joke" to the URL and I will reply with a joke',
       'date': str(datetime.datetime.now())
     })
 
